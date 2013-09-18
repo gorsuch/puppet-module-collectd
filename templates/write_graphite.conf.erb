@@ -5,7 +5,7 @@ LoadPlugin write_graphite
  <Carbon>
    Host "<%= @graphitehost %>"
    Port "<%= @graphiteport %>"
-   Prefix "collectd."
+   Prefix "<%= @prefix %>."
    #Postfix ""
    EscapeCharacter "_"
    StoreRates <%=  @storerates %>
